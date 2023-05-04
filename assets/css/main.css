@@ -1,0 +1,405 @@
+/* Header */
+#head {
+	background: #181015 url(../images/logo.jpg) no-repeat;
+	background-size: cover;
+	min-height: 520px;
+	text-align: center;
+	padding-top: 240px;
+	color: white;
+	font-family: "Open sans", Helvetica, Arial;
+	font-weight: 100;
+}
+
+#head.secondary {
+	height: 100px;
+	min-height: 100px;
+	padding-top: 0px;
+}
+
+#head .lead {
+	font-family: "Open sans", Helvetica, Arial;
+	font-size: 44px;
+	margin-bottom: 6px;
+	color: rgb(87, 55, 19);
+	line-height: 1.15em;
+}
+
+#head .tagline {
+	color: rgba(255, 255, 255, 0.75);
+	margin-bottom: 25px;
+}
+
+#head .tagline a {
+	color: #fff;
+}
+
+#head .btn {
+	margin-bottom: 10px;
+}
+
+#head .btn-default {
+	text-shadow: none;
+	background: transparent;
+	color: rgba(255, 255, 255, .5);
+	-webkit-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .5);
+	-moz-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .5);
+	box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .5);
+	background: transparent;
+}
+
+#head .btn-default:hover,
+#head .btn-default:focus {
+	color: rgba(255, 255, 255, .8);
+	-webkit-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .8);
+	-moz-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .8);
+	box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .8);
+	background: transparent;
+}
+
+#head .btn-default:active,
+#head .btn-default.active {
+	color: #fff;
+	-webkit-box-shadow: inset 0px 0px 0px 3px #fff;
+	-moz-box-shadow: inset 0px 0px 0px 3px #fff;
+	box-shadow: inset 0px 0px 0px 3px #fff;
+	background: transparent;
+}
+
+@media (max-width: 767px) {
+	#head {
+		min-height: 420px;
+		padding-top: 160px;
+	}
+
+	#head .lead {
+		font-size: 34px;
+	}
+}
+
+
+/* Autohide navbar */
+.slideUp {
+	top: -100px;
+}
+
+.headroom {
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+}
+
+
+/* Highlights (in jumbotron in most cases) */
+.highlight {
+	margin-top: 40px;
+}
+
+.h-caption {
+	text-align: center;
+}
+
+.h-caption i {
+	display: block;
+	font-size: 54px;
+	color: #382526;
+	margin-bottom: 36px;
+}
+
+.h-caption h4 {
+	color: #382526;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.h-body {}
+
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Open sans", Helvetica, Arial;
+	color: rgb(211, 210, 210)
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+	margin-top: 30px;
+}
+
+blockquote {
+	font-style: italic;
+	font-family: Georgia;
+	color: #999;
+	margin: 30px 0 30px;
+}
+
+label {
+	color: rgb(211, 210, 210);
+}
+
+.thin {
+	font-weight: 300;
+}
+
+.page-title {
+	margin-top: 20px;
+	font-weight: 300;
+}
+
+.text-muted {
+	color: rgb(211, 210, 210)
+}
+
+.breadcrumb {
+	background: none;
+	padding: 0;
+	margin: 30px 0 0px 0;
+}
+
+ul.list-spaces li {
+	margin-bottom: 10px;
+}
+
+/* Helpers */
+.container-full {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.top-space {
+	margin-top: 72px;
+}
+
+.top-margin {
+	margin-top: 20px;
+}
+
+img {
+	max-width: 100%;
+}
+
+img.pull-right {
+	margin-left: 10px;
+}
+
+img.pull-left {
+	margin-right: 10px;
+}
+
+#map {
+	width: 100%;
+	height: 280px;
+}
+
+#social {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#social .wrapper {
+	width: 340px;
+	margin: 0 auto;
+}
+
+/* Main content block */
+.maincontent {}
+
+/* Sidebars */
+.sidebar {
+	padding-top: 36px;
+	padding-bottom: 30px;
+}
+
+.sidebar .widget {
+	margin-bottom: 20px;
+}
+
+.sidebar h1,
+.sidebar .h1,
+.sidebar h2,
+.sidebar .h2,
+.sidebar h3,
+.sidebar .h3 {
+	margin-top: 20px;
+}
+
+.footer2 {
+	background: #125797c7;
+	padding: 50px 0;
+	color: #aaa;
+	font-size: 12px;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer2 a {
+	color: rgb(211, 210, 210);
+}
+
+.footer2 a:hover {
+	color: rgb(87, 55, 19);
+}
+
+.footer2 p {
+	margin: 0;
+}
+
+.widget-simplenav {
+	margin-left: -5px;
+}
+
+.widget-simplenav a {
+	margin: 0 5px;
+}
+
+.err {
+	padding: 1em 1em 1em 3em;
+	border-radius: 1em;
+	background-color: #f88;
+	color: #222;
+}
+
+.inf {
+	padding: 1em 1em 1em 3em;
+	border-radius: 1em;
+	background-color: #8f8;
+	color: #222;
+}
+
+.res {
+	padding: 1em 1em 1em 1.5em;
+	border-radius: 1em;
+	background-color: #ff0;
+	color: #222;
+}
+
+.myContainer {
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.myTable {
+	width: 100%;
+	border: 2px solid rgb(28, 114, 184);
+}
+
+.myTable-header {
+	display: flex;
+	width: 100%;
+	background: rgb(28, 114, 184);
+	padding: 24px;
+	align-items: center;
+}
+
+.myTable-row {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	padding: 24px;
+}
+
+.myTable-row:nth-of-type(odd) {
+	background: rgb(26, 161, 202);
+}
+
+.myTable-row:nth-of-type(even) {
+	background: rgb(28, 114, 184);
+}
+
+.myTable-data,
+.header__item {
+	flex: 1 1 20%;
+	align-items: center;
+	text-align: center;
+}
+
+.custom-select {
+	position: relative;
+	font-family: "Open sans";
+	float: left;
+	margin-left: 60px;
+}
+
+.custom-select select {
+	display: none;
+	/* hide original SELECT element: */
+}
+
+.select-selected {
+	background-color: rgb(187, 158, 125);
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+	position: absolute;
+	content: "";
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: rgb(87, 55, 19) transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+	border-color: transparent transparent rgb(87, 55, 19) transparent;
+	top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+	color: rgb(87, 55, 19);
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-color: rgb(87, 55, 19);
+	cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+	position: absolute;
+	background-color: rgb(187, 158, 125);
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+	padding-top: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.action-container {
+	display: inline-block;
+	margin-bottom: 5px;
+}

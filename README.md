@@ -9,3 +9,12 @@ facility should be shown.
 that user can select
 -view with incoming appointments
 -unit test framework installation
+
+05.05.2023
+-facility selection and doctors overwiev done
+
+TO DO
+-after doctor selection his schedule should appear with possible appointments 
+that user can select
+-view with incoming appointments
+-unit test framework installation

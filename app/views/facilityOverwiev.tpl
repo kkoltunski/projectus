@@ -12,10 +12,8 @@
 <div class="myContainer">
     <div class="myTable">
         <div class="myTable-header">
-            <div class="header__item"><label>Nazwa</label></div>
-            <div class="header__item"><label>Miasto</label></div>
-            <div class="header__item"><label>Województwo</label></div>
-            <div class="header__item"><label>Specjalizacja</label></div>
+            <div class="header__item"><label>Imie</label></div>
+            <div class="header__item"><label>Nazwisko</label></div>
 
             {if !\core\RoleUtils::inRole('admin')}
                 <div class="header__item"><label></label></div>
@@ -23,25 +21,21 @@
         </div>
         <div class="myTable-content">
             {if !empty($data)}
-                {foreach $data as $facility}
+                {foreach $data as $doctor}
                     <div class="myTable-row">
-                        {foreach $facility as $param}
-                            {if strcmp($param, $facility['name']) == 0}
+                        {foreach $doctor as $param}
+                            {if strcmp($param, $doctor['name']) == 0}
                                 <div class="myTable-data"><label>{$param}</label></div>
-                            {elseif strcmp($param, $facility['town']) == 0}
-                                <div class="myTable-data"><label>{$param}</label></div>
-                            {elseif strcmp($param, $facility['voivodeship']) == 0}
-                                <div class="myTable-data"><label>{$param}</label></div>
-                            {elseif strcmp($param, $facility['specialization_name']) == 0}
+                            {elseif strcmp($param, $doctor['surname']) == 0}
                                 <div class="myTable-data"><label>{$param}</label></div>
                             {/if}
                         {/foreach}
 
                         {if !\core\RoleUtils::inRole('admin')}
                             <div div class="myTable-data">
-                                <form action="{$conf->action_url}facilitySelected" method="post">
+                                <form action="{$conf->action_url}doctorSelected" method="post">
                                     <button class="btn btn-action" name="buttonValue" type="submit"
-                                        value={$facility['regon']}>Wybierz</button>
+                                        value={$doctor['id']}>Wybierz</button>
                                 </form>
                             </div>
                         {/if}

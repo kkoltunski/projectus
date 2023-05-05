@@ -21,3 +21,6 @@ Utils::addRoute('logout', 'LoginCtrl', ['user', 'admin']);
 // searching and filtering
 Utils::addRoute('processFiltering', 'FilteringCtrl');
 Utils::addRoute('searchShow', 'SearchCtrl');
+
+// facility selection
+Utils::addRoute('facilitySelected', 'FacilitySelectionCtrl');

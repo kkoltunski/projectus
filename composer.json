@@ -1,0 +1,17 @@
+{
+    "name": "us/project",
+    "description": "Project Laboratory",
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Klaudiusz Koltunski, Mateusz Ratajczak"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "9.6"
+    }
+}

@@ -11,6 +11,7 @@
         {/if}
 
         {if $inRoleUser or $inRoleAdmin}
+            <li class="active"><a href="{$conf->action_url}appointments">Wizyty</a></li>
             <li><a class="btn" href="{$conf->action_url}logout">Wyloguj</a></li>
         {else}
 			<li class="active"><a href="{$conf->action_url}registrationShow">Zarejestruj</a></li>

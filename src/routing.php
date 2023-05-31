@@ -24,3 +24,8 @@ Utils::addRoute('searchShow', 'SearchCtrl');
 
 // facility selection
 Utils::addRoute('facilitySelected', 'FacilitySelectionCtrl');
+
+// schedule selection
+Utils::addRoute('scheduleSelected', 'ScheduleSelectionCtrl');
+Utils::addRoute('scheduleApproved', 'ScheduleSelectionCtrl', ['user', 'admin']);
+Utils::addRoute('appointments', 'AppointmentsCtrl', ['user', 'admin']);

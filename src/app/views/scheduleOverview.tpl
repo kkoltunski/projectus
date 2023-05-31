@@ -12,8 +12,8 @@
 <div class="myContainer">
     <div class="myTable">
         <div class="myTable-header">
-            <div class="header__item"><label>Imie</label></div>
-            <div class="header__item"><label>Nazwisko</label></div>
+            <div class="header__item"><label>Data</label></div>
+            <div class="header__item"><label>Godzina</label></div>
 
             {if !\core\RoleUtils::inRole('admin')}
                 <div class="header__item"><label></label></div>
@@ -21,21 +21,21 @@
         </div>
         <div class="myTable-content">
             {if !empty($data)}
-                {foreach $data as $doctor}
+                {foreach $data as $schedule}
                     <div class="myTable-row">
-                        {foreach $doctor as $param}
-                            {if strcmp($param, $doctor['name']) == 0}
+                        {foreach $schedule as $param}
+                            {if strcmp($param, $schedule['date']) == 0}
                                 <div class="myTable-data"><label>{$param}</label></div>
-                            {elseif strcmp($param, $doctor['surname']) == 0}
+                            {elseif strcmp($param, $schedule['time']) == 0}
                                 <div class="myTable-data"><label>{$param}</label></div>
                             {/if}
                         {/foreach}
 
                         {if !\core\RoleUtils::inRole('admin')}
-                            <div div class="myTable-data">
-                                <form action="{$conf->action_url}scheduleSelected" method="post">
+                            <div class="myTable-data">
+                                <form action="{$conf->action_url}scheduleApproved" method="post">
                                     <button class="btn btn-action" name="buttonValue" type="submit"
-                                        value={$doctor['id']}>Wybierz</button>
+                                        value={$schedule['date']}>Wybierz</button>
                                 </form>
                             </div>
                         {/if}

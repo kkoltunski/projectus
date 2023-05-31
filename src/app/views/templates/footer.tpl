@@ -13,6 +13,7 @@
 						{/if}
 
 						{if \core\RoleUtils::inRole('user') or \core\RoleUtils::inRole('admin')}
+							<b><a href="{$conf->action_url}appointments">Wizyty</a></b> |
 							<b><a href="{$conf->action_url}logout">Wyloguj</a></b>
 						{else}
 							<b><a href="{$conf->action_url}registrationShow">Zarejestruj</a></b> |

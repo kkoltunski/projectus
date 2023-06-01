@@ -97,12 +97,14 @@ class RegistrationCtrl
 
     private function insertToDB()
     {
+        $hashed_pass = password_hash($this->form->passwordFirst, PASSWORD_DEFAULT);
+
         App::getDB()->insert("patient", [
             "pesel" => $this->form->pesel,
             "name" => $this->form->name,
             "surname" => $this->form->surname,
             "email" => $this->form->email,
-            "password" => $this->form->passwordFirst
+            "password" => $hashed_pass
         ]);
 	}
 }
